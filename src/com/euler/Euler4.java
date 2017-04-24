@@ -24,6 +24,19 @@ public class Euler4 {
         }
     }*/
 
+   public static int mult3Permutation(int digits) {
+       int maxPalindrome = -1;
+       for (int i = (int)Math.pow(10, digits) - 1; i > 1; i--) {
+           for (int j = i; j > 1 ; j--) {
+               if (isPalindrome(i*j) && maxPalindrome < i*j)  {
+                   maxPalindrome = i*j;
+                   break;
+               }
+           }
+       }
+       return maxPalindrome;
+   }
+
     // More elegant palindrome check
     public static boolean isPalindrome(int target) {
         String reverseStr = "";
@@ -35,8 +48,6 @@ public class Euler4 {
     }
 
     public static void main(String[] args) {
-        String strTarget = "12321";
-        System.out.println(isPalindrome(4));
-
+        System.out.println(mult3Permutation(3));
     }
 }
