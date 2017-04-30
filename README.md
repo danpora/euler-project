@@ -1,5 +1,6 @@
-# euler-project
+# ProjectEuler solutions
 
-My solutions to ProjectEuler's problems.
+My solutions to ProjectEuler's problems. 
+Written mostly in Java.
 
-ProjectEuler achives: []https://projecteuler.net
+ProjectEuler archives: https://projecteuler.net
