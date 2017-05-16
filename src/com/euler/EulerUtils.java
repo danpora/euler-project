@@ -1,5 +1,7 @@
 package com.euler;
 
+import java.math.BigInteger;
+
 /**
  * Common static functions for Euler Problems
  */
@@ -37,5 +39,23 @@ public final class EulerUtils {
             currDivider++;
         }
         return divsorCount;
+    }
+
+    // Factorial calculations
+    public static long factorial(long n) {
+        long factorial = 1;
+        for (long i = 1; i <= n; i++) {
+            factorial *= i;
+        }
+        return factorial;
+    }
+
+    // Big integers factorial calculations
+    public static BigInteger bigFactorial(long n) {
+        BigInteger factorial = new BigInteger("1");
+        for (long i = 1; i <= n; i++) {
+            factorial = factorial.multiply(new BigInteger(Long.toString(i)));
+        }
+        return factorial;
     }
 }
