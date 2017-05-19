@@ -16,6 +16,7 @@ import java.util.List;
 //        That is, 3 + 7 + 4 + 9 = 23.
 //
 //        Find the maximum total from top to bottom of the triangle below:
+
 public class Euler18 {
     public static final String TRIANGLE =
                                     "75\n" +
