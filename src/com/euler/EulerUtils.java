@@ -59,12 +59,4 @@ public final class EulerUtils {
         return factorial;
     }
 
-    // Big integers factorial sum digit
-    public static BigInteger bigFactorialForSum(long n) {
-        BigInteger factorialW_O_Zeros = new BigInteger("1");
-        for (long i = 1; i <= n; i++) {
-                factorialW_O_Zeros = factorialW_O_Zeros.multiply(new BigInteger(Long.toString(i)));
-        }
-        return factorialW_O_Zeros;
-    }
 }

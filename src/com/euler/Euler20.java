@@ -12,8 +12,7 @@ import java.math.BigInteger;
 public class Euler20 {
     // Sum all digits of the given number factorial
     public static long factorialSumDigit(int factorial) {
-        BigInteger disZeroFactorial = EulerUtils.bigFactorialForSum(factorial);
-        System.out.println(disZeroFactorial);
+        BigInteger disZeroFactorial = EulerUtils.bigFactorial(factorial);
         long digitSum = 0;
         // Divide factorial by 10 until 0 is reached
         while (!disZeroFactorial.toString().equals("0")) {
